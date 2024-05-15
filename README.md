@@ -5,9 +5,8 @@ Seamless integration with a public API, Movies App fetches an extensive collecti
 
 
 ## Screenshots
-
-![Screenshot_20240515_111448_Movies](https://github.com/sheikh9871/Movies/assets/45935225/781b7cbf-825e-4e48-ab62-e59996c1cc55)
-![App Screenshot](https://drive.google.com/file/d/170HN9rdzOEeh7QGD_E1LrbW48-Hsv9TG/view?usp=sharing)
+<img src="https://github.com/sheikh9871/Movies/assets/45935225/3ab56deb-3c7e-4519-923c-c145b7123d9b" width="300" />
+<img src="https://github.com/sheikh9871/Movies/assets/45935225/fbf6f774-ad79-496d-b3db-11cffd34e07b" width="300" />
 
 
 ## Tech Stack
