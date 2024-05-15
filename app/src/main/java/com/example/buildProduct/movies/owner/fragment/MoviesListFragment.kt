@@ -66,7 +66,7 @@ class MoviesListFragment: Fragment() {
                     findNavController().navigate(R.id.movie_detail_fragment, bundle)
 
                 }
-                ACTION_RETRY -> {}
+                ACTION_RETRY -> { viewModel.retry() }
             }
         }.also {
             binding.moviesRecycler.adapter = it
