@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size_progress_mid">48dp</dimen>
+    <dimen name="margin_layout_small">4dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
+    <dimen name="material_card_radius_xlarge">32dp</dimen>
+    <dimen name="_40sdp">40.00dp</dimen>
+    <dimen name="_30sdp">30.00dp</dimen>
+    <dimen name="_18ssp">18.00sp</dimen>
+    <dimen name="_8sdp">8.00dp</dimen>
+    <dimen name="_16sdp">16.00dp</dimen>
+</resources>

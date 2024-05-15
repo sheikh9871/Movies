@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="com.example.buildProduct.remoteUtils.Status" />
+
+        <import type="android.view.View" />
+
+        <variable
+            name="showRefreshUI"
+            type="Boolean" />
+
+        <variable
+            name="networkStatus"
+            type="Status" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pagination_loader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/progress_bar"
+            android:layout_width="@dimen/size_progress_mid"
+            android:layout_height="@dimen/size_progress_mid"
+            android:layout_margin="@dimen/margin_layout_small"
+            android:visibility="@{networkStatus==Status.LOADING &amp;&amp;showRefreshUI ? View.VISIBLE:View.GONE,default=visible}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="loading_new.json"
+            app:lottie_loop="true" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/fab_elevation"
+            android:gravity="center"
+            android:text="@string/refresh"
+            android:textAllCaps="false"
+            android:textColor="@color/purple_200"
+            android:visibility="@{networkStatus==Status.ERROR &amp;&amp;showRefreshUI ?View.VISIBLE:View.GONE,default=gone}"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="@dimen/material_card_radius_xlarge"
+            app:icon="@drawable/baseline_refresh_24"
+            app:iconTint="@color/purple_200"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/progress_bar"
+            app:rippleColor="@color/purple_500"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

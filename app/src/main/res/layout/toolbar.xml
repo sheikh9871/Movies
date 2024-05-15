@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/li_layout_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/background"
+            app:buttonGravity="center_vertical"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"
+            app:maxButtonHeight="@dimen/_30sdp"
+            app:popupTheme="@style/MyPopupTheme"
+            app:theme="@style/ToolBarTitle"
+            app:title="@string/movies"
+            app:titleTextAppearance="@style/TitleTextAppearance"
+            app:titleTextColor="@color/primary_opposite" />
+
+        <FrameLayout
+            android:id="@+id/frame_shadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp" />
+        </FrameLayout>
+    </LinearLayout>
+
+</layout>
